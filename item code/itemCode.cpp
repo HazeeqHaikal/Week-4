@@ -32,10 +32,11 @@ int main() {
     }
 
     if (!found) {
-        cout << "Error, this is not in the list";
+        cout << "\nError, this is not in the list";
+        return 1;
     }
 
-    cout << "Final price: RM" << priceOutput;
+    cout << "\nFinal price: RM" << priceOutput;
 
     return 0;
 }
