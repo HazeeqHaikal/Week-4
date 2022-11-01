@@ -4,17 +4,19 @@
 using namespace std;
 
 int main() {
-    float salary, attendanceAllowance, salaryIncrease;
+    float salary, attendanceAllowance;
 
     attendanceAllowance = 0;
-    salaryIncrease = 100;
 
     cout << "Enter your salary: ";
     cin >> salary;
 
-    if (salary < 1500) {
-        attendanceAllowance += 5;
-        salary *= 112 / salaryIncrease;
+    cout << "Enter your current attendance allowance: ";
+    cin >> attendanceAllowance;
+
+    if (salary <= 1500) {
+        attendanceAllowance *= 1.05;
+        salary *= 1.12;
     }
 
     cout << "\nYour attendance allowance increase by " << attendanceAllowance << "%";

@@ -6,20 +6,18 @@ using namespace std;
 
 int main() {
     int magazine;
-    float pricePerUnit, finalPrice;
+    float price;
 
     cout << "Enter the number of magazines that you bought: ";
     cin >> magazine;
 
     if (magazine >= 5) {
-        pricePerUnit = 5;
+        price = 5.0 * magazine;
     } else {
-        pricePerUnit = 7;
+        price = 7.0 * magazine;
     }
 
-    finalPrice = magazine * pricePerUnit;
-
-    cout << fixed << setprecision(2) << "\nThe final price is: RM" << finalPrice << endl;
+    cout << fixed << setprecision(2) << "\nThe final price is: RM" << price << endl;
 
     return 0;
 }
