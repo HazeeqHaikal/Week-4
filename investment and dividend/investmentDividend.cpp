@@ -11,11 +11,11 @@ int main() {
 
     if (investment > 75000) {
         dividend = 0.013 * investment;
-    } else if (investment <= 7500 && investment > 50000) {
+    } else if (investment > 50000) {
         dividend = 0.011 * investment;
-    } else if (investment <= 50000 && investment > 30000) {
+    } else if (investment > 30000) {
         dividend = 0.01 * investment;
-    } else if (investment <= 30000 && investment > 10000) {
+    } else if (investment > 10000) {
         dividend = 0.003 * investment;
     } else {
         dividend = 0.002 * investment;
