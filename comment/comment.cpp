@@ -35,7 +35,7 @@ int main() {
     // 4) determine whether the names entered are the same or not
     // if the names are not the same, display the longer name
     if (name1 == name2) {
-        cout << "The names are the same" << endl;
+        cout << "\nThe names are the same" << endl;
     } else {
         if (name1.length() > name2.length()) {
             cout << "\nThe longer name is " << name1 << endl;
