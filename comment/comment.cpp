@@ -39,8 +39,10 @@ int main() {
     } else {
         if (name1.length() > name2.length()) {
             cout << "The longer name is " << name1 << endl;
-        } else {
+        } else if(name1.length() < name2.length()) {
             cout << "The longer name is " << name2 << endl;
+        }else{
+            cout << "The names are the same length" << endl;
         }
     }
     cout << endl;
