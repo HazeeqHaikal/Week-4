@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 #define size 30
 
@@ -7,10 +8,10 @@ int main() {
     string name1, name2;
 
     cout << "Enter name 1: ";
-    cin >> name1;
+    getline(cin, name1);
 
     cout << "Enter name 2: ";
-    cin >> name2;
+    getline(cin, name2);
 
     // 2) input 2 integer numbers to represent the age of the 2 individuals
     int age1, age2;
