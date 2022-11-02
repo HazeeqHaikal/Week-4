@@ -7,7 +7,7 @@ int main() {
     char program;
     float cgpa, amount;
 
-    cout << "What is your program?\nA. Diploma\nB. Bachelor\n\nYour program: ";
+    cout << "\nWhat is your program?\nA. Diploma\nB. Bachelor\n\nYour program: ";
     cin >> program;
     // uppercase char for program variable
     program = toupper(program);
@@ -15,10 +15,14 @@ int main() {
     cout << "What is your CGPA: ";
     cin >> cgpa;
 
-    if (program == 'A' && cgpa >= 3.0) {
-        amount = 5000;
-    } else if (program == 'A' && cgpa < 3.0) {
+    if (cgpa > 4.00) {
+        cout << "Invalid CGPA" << endl;
+        main();
+        return 1;
+    } else if (program == 'A' && cgpa >= 3.0) {
         amount = 7000;
+    } else if (program == 'A' && cgpa < 3.0) {
+        amount = 5000;
     } else if (program == 'B' && cgpa >= 3.0) {
         amount = 10000;
     } else if (program == 'B' && cgpa < 3.0) {
@@ -26,6 +30,7 @@ int main() {
     } else {
         cout << endl
              << "Invalid program" << endl;
+        main();
         return 1;
     }
 

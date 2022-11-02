@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#define size 30
 
 int main() {
     // 1) input 2 names
