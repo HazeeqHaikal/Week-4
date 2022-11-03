@@ -9,6 +9,7 @@ int main() {
 
     cout << "\nWhat is your program?\nA. Diploma\nB. Bachelor\n\nYour program: ";
     cin >> program;
+
     // uppercase char for program variable
     program = toupper(program);
 
